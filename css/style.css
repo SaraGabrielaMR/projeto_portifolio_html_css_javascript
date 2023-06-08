@@ -1,0 +1,588 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;700&family=Montserrat:wght@100;200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body{
+    margin-top: 100px;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#1F252D, #353E43, #566166);
+    background-attachment: fixed;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #1F252D;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu li a{
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 10px 20px 10px 20px;
+}
+
+.menu li a:hover{
+    color: #BA55D3;
+    display: block;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+
+.logo{
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: aqua;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    /* border: 1px solid #fff; */
+    display: grid;
+    grid-template-areas: 
+    "inicio"
+    "sobre"
+    "habilidades"
+    "hobbies"
+    "contato";
+}
+
+/* estilização das imagens */
+
+img{
+    width: 100%;
+}
+
+#imagem1{
+    width: 35rem;
+}
+
+#imagem2{
+    width: 35rem;
+}
+
+#imagem3{
+    width: 25rem;
+}
+
+#nome #redes a{
+    color: #BA55D3;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+
+/* estilização das div principal */
+
+.inicio{
+    width: auto;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-areas: 
+    "nome imagem1";
+}
+
+/* estilização das div filha */
+#nome{
+    max-width: 500px;
+    min-width: 500px;
+    height: 100vh;
+    padding-left: 100px;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#nome h3{
+    color: #fff;
+    font-size: 15px;
+}
+
+#nome h1{
+    color: #fff;
+    margin-top: 1px;
+}
+
+#nome span{
+    color: #BA55D3;
+}
+
+#nome p{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 1px;
+    width: 100%;
+    text-align: justify;
+}
+
+
+/* estilização das div principal */
+.sobre{
+    width: auto;
+    height: 100vh;
+    padding-top: 20px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-areas: 
+    "historia imagem2";
+}
+
+/* estilização das div filha */
+#historia{
+    max-width: 500px;
+    min-width: 500px;
+    height: 100vh;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#historia span{
+    color: #BA55D3;
+    font-size: 5rem;
+}
+
+#historia p{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 300;
+    width: 85%;
+    text-align: justify;
+}
+
+/* estilização das div principal */
+.habilidades{
+    width: auto;
+    height: 100vh;
+    padding-top: 130px;
+    display: grid;
+    justify-content: center;
+    grid-template-areas: 
+    "conteudo conteudo";
+}
+
+/* estilização das div filha */
+#conteudo{
+    max-width: 800px;
+    min-width: 800px;
+    height: 100vh;
+}
+
+#conteudo span{
+    color: #BA55D3;
+    font-size: 5rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+#l1{
+    background-color: #d0d0d0;
+    border-radius: 4px;
+    width: 50rem;
+    margin: auto;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+#l2{
+    background-color: #d0d0d0;
+    border-radius: 4px;
+    width: 50rem;
+    margin: auto;
+    margin-top: 0.9rem;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+#l3{
+    background-color: #d0d0d0;
+    border-radius: 4px;
+    width: 50rem;
+    margin: auto;
+    margin-top: 0.9rem;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+#l4{
+    background-color: #d0d0d0;
+    border-radius: 4px;
+    width: 50rem;
+    margin: auto;
+    margin-top: 0.9rem;
+    padding: 10px 10px;
+}
+
+/* estilização das div principal */
+.hobbies{
+    width: auto;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    grid-template-areas: 
+    "lista imagem3";
+}
+
+/* estilização das div filha */
+#lista{
+    max-width: 500px;
+    min-width: 500px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#lista span{
+    color: #BA55D3;
+    font-size: 5rem;
+    padding: 0 0 0 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#lista li{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 0 0 0 160px;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+/* estilização das div principal */
+.contato{
+    width: auto;
+    height: 100vh;
+    padding-top: 130px;
+    display: grid;
+    justify-content: center;
+    grid-template-areas: 
+    "formulario"
+    "botoes";
+}
+
+/* estilização das div filha */
+#formulario{
+    max-width: 800px;
+    min-width: 800px;
+    height: 100%;
+}
+
+#formulario span{
+    color: #BA55D3;
+    font-size: 5rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+#formulario input{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: none;
+    border-radius: 7px;
+    background-color: #d0d0d0;
+    height: 2rem;
+    color: #000;
+    outline: none;
+    padding-left: 0.9rem;
+}
+
+#formulario label{
+    color: #fff;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#formulario textarea{
+    width: 80%;
+    height: 32%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 0.9rem;
+    border-radius: 7px;
+    background-color: #d0d0d0;
+    color: #000;
+    outline: none;
+    padding-top: 0.2rem;
+}
+
+#botoes button{
+    font-size: 17px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: #BA55D3;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+    margin-right: 10%;
+    width: 200px;
+    outline: none;
+    border: none;
+}
+
+#botoes button:hover{
+    background: transparent;
+    border:solid 1px #BA55D3;
+    color: #BA55D3;
+    transition: 0.5s;
+}
+
+@media (max-width: 1080px){
+    .inicio{
+        width: auto;
+        height: 100vh;
+        display: grid;
+        justify-content: center;
+        grid-template-areas: 
+        "nome"
+        "imagem1";
+    }
+    #imagem1{
+        display: none;
+    }
+    #nome{
+        max-width: 900px;
+        min-width: 500px;
+        padding-right: 90px;
+        height: 100vh;
+        display: flex;
+        align-items: left;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+
+    .sobre{
+        width: auto;
+        height: 100vh;
+        margin-top: 230px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-areas: 
+        "historia"
+        "imagem2";
+    }
+    #imagem2{
+        display: none;
+    }
+    #historia{
+        max-width: 900px;
+        min-width: 500px;
+        padding-left: 90px;
+        height: 100vh;
+        display: flex;
+        align-items: left;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .habilidades{
+        width: auto;
+        height: 100vh;
+        padding-top: 130px;
+        display: grid;
+        justify-content: center;
+        grid-template-areas: 
+        "conteudo"
+        "conteudo";
+        margin-top: 600px;
+    }
+
+    .hobbies{
+        width: auto;
+        height: 100vh;
+        display: grid;
+        align-items: center;
+        grid-template-areas: 
+        "lista"
+        "imagem3";
+        margin-top: 100px;
+    }
+    #imagem3{
+        display: none;
+    }
+    #lista{
+        max-width: 800px;
+        min-width: 500px;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #lista li{
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 300;
+        padding: 0 0 0 160px;
+        display: flex;
+        align-items: left;
+        justify-content: left;
+    }
+
+    .contato{
+        width: auto;
+        height: 100vh;
+        padding-top: 130px;
+        display: grid;
+        justify-content: center;
+        grid-template-areas: 
+        "formulario"
+        "botoes";
+        margin-top: 330px;
+    }
+}
+
+@media (max-width: 900px){
+    .habilidades{
+        width: auto;
+        height: 100vh;
+        padding-top: 130px;
+        display: grid;
+        justify-content: center;
+        grid-template-areas: 
+        "conteudo"
+        "conteudo";
+        margin-top: 600px;
+    }
+
+    #l1{
+        background-color: #d0d0d0;
+        border-radius: 4px;
+        width: 30rem;
+        margin: auto;
+        padding: 10px 10px;
+        cursor: pointer;
+    }
+    
+    #l2{
+        background-color: #d0d0d0;
+        border-radius: 4px;
+        width: 30rem;
+        margin: auto;
+        margin-top: 0.9rem;
+        padding: 10px 10px;
+        cursor: pointer;
+    }
+    
+    #l3{
+        background-color: #d0d0d0;
+        border-radius: 4px;
+        width: 30rem;
+        margin: auto;
+        margin-top: 0.9rem;
+        padding: 10px 10px;
+        cursor: pointer;
+    }
+    
+    #l4{
+        background-color: #d0d0d0;
+        border-radius: 4px;
+        width: 30rem;
+        margin: auto;
+        margin-top: 0.9rem;
+        padding: 10px 10px;
+    }
+
+    #lista span{
+        color: #BA55D3;
+        font-size: 5rem;
+        padding: 0 0 0 160px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 300px;
+    }
+}
+
+@media (max-width: 730px){
+    #nome{
+        max-width: 700px;
+        min-width: 500px;
+        height: 100vh;
+        padding-left: 100px;
+        display: flex;
+        align-items: left;
+        justify-content: center;
+        flex-direction: column;
+        margin-right: 90px;
+    }
+
+    #lista li{
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 300;
+        padding: 0 0 0 160px;
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        margin-right: 300px;
+    }
+
+    #historia{
+        max-width: 700px;
+        min-width: 500px;
+        height: 100vh;
+        display: flex;
+        align-items: left;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #formulario{
+        max-width: 600px;
+        min-width: 600px;
+        height: 100%;
+    }
+    #formulario span{
+        color: #BA55D3;
+        font-size: 4rem;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+
+}

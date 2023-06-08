@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="icon" href="imagens\apple-touch-icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="imagens\apple-touch-icon.png" type="image/x-icon">
+    <title> Portifólio da Sara Gabriela </title>
+</head>
+<body>
+    <header>
+        <div class="logo"> <img src="imagens\apple-touch-icon.png"> </div>
+        <ul class="menu">
+            <li> <a href="#inicio"> Início </a></li>
+            <li> <a href="#habilidades"> Habilidades </a></li>
+            <li> <a href="#hobbies"> Hobbies </a></li>
+            <li> <a href="#sobre"> Sobre Mim </a></li>
+            <li> <a href="#contato"> Contato </a></li>
+        </ul>
+    </header>
+
+    <section class="container">
+
+        <div class="inicio" id="inicio">
+            <div id="nome">
+                <h3> Olá, Pessoal</h3>
+                <h1> Eu Sou <span> Sara Gabriela Moura </span> </h1>
+                <p>Bem-vindo ao meu portfólio! Aqui você encontrará meus projetos criados tanto no 
+                curso de Desenvolvimento de Sistemas, quanto Projetos Pessoais. E verá minhas
+                habilidades na área de tecnologia. Espero que você goste do que vê e 
+                sinta-se à vontade para entrar em contato comigo para discutir possíveis 
+                oportunidades de colaboração.</p>
+                <div id="redes">
+                    <a href="#"> <i class="fa-brands fa-facebook" onclick="facebook()"></i> </a>
+                    <a href="#"> <i class="fa-brands fa-instagram" onclick="instagram()"></i> </a>
+                    <a href="#"> <i class="fa-brands fa-linkedin" onclick="linkedin()"></i> </a>
+                    <a href="#"> <i class="fa-brands fa-github" onclick="github()"></i> </a>
+                </div>
+            </div>
+            <div id="imagem1">
+                <img src="imagens/imagemSara.png">
+            </div>
+        </div>
+
+        <div class="sobre" id="sobre">
+            <div id="historia">
+                <span> SOBRE MIM </span>
+                <p> Olá! Eu sou a Sara Gabriela, tenho 20 anos, nasci e cresci em São Paulo/SP. Sou fanática pelo mundo da tégnologia e 
+                    programação. Sou uma estudante dedicada, e estou em busca de desafios e oportunidades para expandir meus conhecimentos
+                    e habilidades no mundo da tecnologia.
+                    Desde o momento em que descobri a programação, fiquei fascinado com a capacidade de criar soluções inovadoras e 
+                    impactar positivamente a vida das pessoas por meio do código. 
+                    Atualmente, estou cursando Desenvolvimento de Sistemas com ênfase em programação na Escola Técnica Proz Educação. 
+                    Através dessa formação, tenho adquirido uma base sólida em conceitos fundamentais de programação, estruturas de dados 
+                    e algoritmos, bem como linguagens e tecnologias relevantes para a indústria.
+                </p>
+            </div>
+            <div id="imagem2">
+                <img src="imagens/imagemSobreMim.svg">
+            </div>
+        </div>
+
+        <div class="habilidades" id="habilidades">
+            <div id="conteudo">
+                <span> HABILIDADES </span>
+                <div id="l1" onclick="html5()"> <p> HTML5 </p> <a href="https://github.com/SaraGabrielaMR/pagina-basica-html/tree/main" target="_blank"> Saiba Mais </a> </div>
+                <div id="l2" onclick="css3()"> <p> CSS3 </p> <a href="#" onclick="codigo"> Saiba Mais </a> </div>
+                <div id="l3" onclick="javascript()"> <p> JavaScript </p> <a href="https://github.com/SaraGabrielaMR/conversao-de-unidades-de-medidas-js" target="_blank"> Saiba Mais </a> </div>
+                <div id="l4"> <p> Java </p> <a href="https://github.com/SaraGabrielaMR/projeto-calculadora-java"> Saiba Mais </a> </div>
+            </div>
+        </div>
+
+        <div class="hobbies" id="hobbies">
+            <div id="lista">
+                <span> HOBBIES </span>
+                <ul>
+                    <li> Edição de Vídeo; </li>
+                    <li> Jogos de Simulação; </li>
+                    <li> Programação; </li>
+                    <li> Edição Básica de Imagens; </li>
+                    <li> Aprender Algo Novo Relacionado a Tecnologia; </li>
+                </ul>
+            </div>
+            <div id="imagem3">
+                <img src="imagens/imgemGostos.svg">
+            </div>
+        </div>
+
+        <div class="contato" id="contato">
+            <div id="formulario">
+                <span> MEU CONTATO </span>
+                <label> Nome: </label>
+                <input type="text" placeholder="Digite Seu Nome Aqui">
+                <label> Assunto: </label>
+                <input type="text" placeholder="Digite o Assunto Aqui">
+                <label> Mensagem: </label>
+                <textarea> </textarea>
+            </div>
+            <div id="botoes">
+                <button> Enviar </button>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
